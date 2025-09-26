@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>.sail Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000000;
+      --accent: #afd0f1;
+      --accent2: #d5e3ef;
+      --muted: #afd0f1;
+      --glass: rgba(255,255,255,0.05);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: #fff; }
+    a { color: inherit; text-decoration: none; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+
+    header { display: flex; justify-content: space-between; align-items: center; }
+    .logo { display:flex; align-items:center; gap:10px; font-weight: 800; font-size: 22px; color: var(--accent); }
+    .logo img { width:40px; height:40px; border-radius:8px; }
+    .nav-links { display: flex; gap: 20px; }
+    .nav-links a { color: var(--muted); padding: 8px 12px; border-radius: 8px; }
+    .nav-links a:hover { background: var(--glass); color: #fff; }
+    .btn { background: linear-gradient(90deg,var(--accent),var(--accent2)); padding: 10px 16px; border-radius: 10px; font-weight: 700; border: none; cursor: pointer; }
+
+    .hero { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; margin-top: 60px; }
+    .hero-left { flex: 1; }
+    .hero-left h1 { font-size: 2.8rem; line-height: 1.2; }
+    .hero-left p { margin-top: 18px; color: var(--muted); font-size: 1.1rem; line-height: 1.5; }
+    .cta { margin-top: 24px; display: flex; gap: 14px; }
+
+    .features { margin-top: 80px; display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 24px; }
+    .feature { background: #111; padding: 24px; border-radius: 10px; text-align:center; }
+    .feature img { width:48px; height:48px; margin-bottom:14px; }
+    .feature h3 { margin-bottom: 10px; color: var(--accent); }
+
+    .reviews { margin-top: 80px; }
+    .reviews h2 { margin-bottom: 24px; color: var(--accent); }
+    .review-list { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 20px; }
+    .review { background: #111; padding: 18px; border-radius: 10px; font-size: 0.95rem; color: var(--muted); }
+
+    .affiliates { margin-top: 80px; text-align: center; }
+    .affiliates h2 { color: var(--accent); margin-bottom: 24px; }
+    .aff-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .partner-card { background:#0a0a0a; border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:24px; text-align:center; transition:.2s; }
+    .partner-card:hover { transform:translateY(-4px); box-shadow:0 6px 20px rgba(0,0,0,0.6); }
+    .partner-card img { width:72px; height:72px; margin-bottom:16px; border-radius:50%; background:var(--glass); }
+    .partner-card h3 { margin-bottom:10px; font-weight:700; color:#fff; }
+    .partner-card p { color:var(--muted); font-size:0.95rem; margin-bottom:20px; }
+    .partner-btn { background:#1a1a1a; border:1px solid var(--accent); color:var(--accent); padding:10px 18px; border-radius:8px; font-weight:600; }
+    .partner-btn:hover { background:var(--accent); color:#000; }
+
+    .plus { margin-top: 80px; text-align: center; }
+    .plus h2 { color: var(--accent); }
+    .plus p { margin: 16px auto; max-width: 600px; color: var(--muted); }
+
+    footer { margin-top: 100px; padding: 40px 20px; border-top: 1px solid var(--glass); display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 0.9rem; flex-wrap: wrap; gap: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><img src="sail.webp" alt=".sail logo"> .sail</div>
+      <nav class="nav-links">
+        <a href="team.html">Team</a>
+        <a href="docs.html">Docs</a>
+        <a href="plus.html">.sail+</a>
+        <a href="status.html">Status</a>
+        <a href="support.html">Support</a>
+        <a href="https://discord.gg/rsSfW6aM3n" target="_blank"><button class="btn">Join Server</button></a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Ride the Wave of Creativity with .sail</h1>
+        <p>.sail is an ERLC design server providing high-quality custom liveries, logos, and server graphics made by talented designers.</p>
+        <div class="cta">
+          <a href="https://discord.gg/rsSfW6aM3n" target="_blank"><button class="btn">Join .sail</button></a>
+          <a href="support.html"><button class="btn" style="background:transparent;border:1px solid var(--accent);color:var(--accent);">Support</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature"><img src="staff.webp"><h3>Professional Staff</h3><p>Our staff team ensures a smooth, respectful, and professional design process.</p></div>
+      <div class="feature"><img src="dev.webp"><h3>Experienced Designers</h3><p>Skilled designers who know ERLC inside and out.</p></div>
+      <div class="feature"><img src="bar.webp"><h3>High-Quality Work</h3><p>Polished designs to fit your server’s identity.</p></div>
+      <div class="feature"><img src="people.webp"><h3>Community Driven</h3><p>We value feedback and build designs members love.</p></div>
+    </section>
+
+    <section class="reviews">
+      <h2>Our Reviews</h2>
+      <div class="review-list">
+        <div class="review">“.sail made my server’s graphics stand out. Couldn’t recommend enough!” — Member1</div>
+        <div class="review">“Top tier designers, fast service, and super friendly staff.” — Member2</div>
+        <div class="review">“High quality liveries that brought my server to life.” — Member3</div>
+      </div>
+    </section>
+
+    <section class="affiliates">
+      <h2>Official Partners</h2>
+      <div class="aff-list">
+        <div class="partner-card">
+          <img src="cc.webp">
+          <h3>Coast Customs</h3>
+          <p>Ride the wave of creativity with Coast Customs.</p>
+          <a href="https://discord.gg/abc123" class="partner-btn" target="_blank">Join Discord</a>
+        </div>
+        <div class="partner-card">
+          <div class="placeholder-icon">+</div>
+          <h3>Vacant Spot</h3>
+          <p>Apply for an affiliation and advertise your server here.</p>
+          <a href="contact.html" class="partner-btn">+ Apply Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="plus">
+      <h2>.sail+</h2>
+      <p>Unlock premium design perks, faster delivery, and exclusive customization with .sail+.</p>
+      <a href="plus.html"><button class="btn">Upgrade to .sail+</button></a>
+    </section>
+
+    <footer>
+      <div>© <span id="yr"></span> .sail. All rights reserved.</div>
+      <div><a href="privacy.html">Privacy Policy</a> • <a href="contact.html">Contact Us</a></div>
+    </footer>
+  </div>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
